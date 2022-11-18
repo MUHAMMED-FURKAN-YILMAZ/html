@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        padding-right: 30px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="ad">Adı</label></td>
+          <td><input type="text" id="ad" name="ad" required /></td>
+          <td rowspan="3"><label for="hobi">Hobiler</label></td>
+          <td><input type="checkbox" id="hobi" name="hobi" />Futbol</td>
+        </tr>
+        <tr>
+          <td><label for="soyad">Soyadı</label></td>
+          <td><input type="text" id="soyad" name="soyad" required /></td>
+          <td><input type="checkbox" id="hobi" name="hobi" />Voleybol</td>
+        </tr>
+        <tr>
+          <td>Cinsiyet</td>
+          <td>
+            <input type="radio" id="bay" name="cinsiyet" required />
+            <label for="bay">Bay</label>
+            <input type="radio" id="bayan" name="cinsiyet" required />
+            <label for="bayan">Bayan</label>
+          </td>
+          <td><input type="checkbox" id="hobi" name="hobi" />Basketbol</td>
+        </tr>
+        <tr>
+          <td>İlçe</td>
+          <td>
+            <select name="" id="">
+              <option value="01">Merkez</option>
+              <option value="02">Odunpazarı</option>
+              <option value="03">Tepebaşı</option>
+              <option value="04">Sivrihisar</option>
+              <option value="05">Günyüzü</option>
+            </select>
+          </td>
+          <td><label for="pp">Profil Fotoğrafı</label></td>
+          <td>
+            <input type="file" name="pp" id="pp" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Eposta</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+          <td><label for="dt">Doğum Tarihi</label></td>
+          <td><input type="date" id="dt" name="dt" required /></td>
+        </tr>
+        <tr>
+          <td><label for="url">Kişisel Site</label></td>
+          <td><input type="url" id="url" name="url" /></td>
+          <td><label for="adres">Adres</label></td>
+          <td rowspan="2">
+            <textarea
+              name="adres"
+              id="adres"
+              cols="25"
+              rows="4"
+              required
+              minlength="10"
+              maxlength="100"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="tel">Telefon</label></td>
+          <td>
+            <input type="tel" id="tel" name="tel" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td>
+            <input
+              type="submit"
+              value="Kayıt Ol"
+              style="
+                background-color: rgb(195, 193, 193);
+                border: solid 1px;
+                width: 50%;
+                height: 30px;
+              "
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
